@@ -1,0 +1,72 @@
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.logo > img {
+    width:37.500em;
+    height: 27.125;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 30%;
+    justify-content: center;
+}
+
+form > input {
+    padding-left: 0.5em;
+    margin: 0 1em 1em 1em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.125em solid #0D2663;
+    border-radius: 2em;
+    
+
+    /* font */
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+   
+    
+}
+form>input::placeholder{
+    opacity: 0.44;
+}
+
+button {
+    padding-left: 0.5em;
+    margin: 0 1em 1em 1em;
+    background: #477DB1 0% 0% no-repeat padding-box;
+    border-radius: 2em;
+    border: 0.125em solid #000000;
+
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}

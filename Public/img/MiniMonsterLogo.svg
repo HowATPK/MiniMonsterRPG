@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="602" height="435" viewBox="0 0 602 435">
+  <g id="Group_43" data-name="Group 43" transform="translate(-473 -290)">
+    <text id="MiniMonsterRPG" transform="translate(474 613)" fill="#06163d" stroke="#000" stroke-width="1" font-size="70" font-family="Papyrus-Regular, Papyrus"><tspan x="0" y="74">MiniMonsterRPG</tspan></text>
+    <g id="Group_2" data-name="Group 2" transform="translate(41 -17)" style="isolation: isolate">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(524 307)" fill="rgba(255,255,255,0)" stroke="#0e1f48" stroke-width="10">
+        <ellipse cx="185.5" cy="161.5" rx="185.5" ry="161.5" stroke="none"/>
+        <ellipse cx="185.5" cy="161.5" rx="180.5" ry="156.5" fill="none"/>
+      </g>
+      <path id="Path_15" data-name="Path 15" d="M537.957,462.1c253.582-74.962,395.9-9.966,395.9-9.966s-113.206,47.63-53.692,91.291" transform="translate(-121.233 270.52) rotate(-20)" fill="#1d5891" stroke="#0e1f48" stroke-width="7"/>
+      <line id="Line_1" data-name="Line 1" y1="39" x2="347" transform="translate(542.5 483.5)" fill="none" stroke="#0e1f48" stroke-width="7"/>
+      <path id="Path_16" data-name="Path 16" d="M641.927,455.751c6.425,52.311,32.71,51.749,32.71,51.749l25.116-78.185Z" transform="translate(2)" fill="#65dede" stroke="#0e1f48" stroke-width="7"/>
+    </g>
+  </g>
+</svg>
