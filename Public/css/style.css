@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: 100%;
 }
-
+/*----------------------BLOCK----------------------------------------*/
 .Block{
     display: flex;
     flex-direction: row;
@@ -57,7 +57,9 @@ form>input::placeholder{
     opacity: 0.44;
 }
 
-button {
+
+
+.button{
     padding-left: 0.5em;
     margin: 0 1em 1em 1em;
     background: #477DB1 0% 0% no-repeat padding-box;
@@ -70,3 +72,136 @@ button {
     font-weight: bold;
 
 }
+
+.button2{
+    padding-left: 0.5em;
+    margin: -1em 1em 1em 1em;
+    background:none;
+    border-radius: none;
+    border: none;
+
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*----------------------BLOCK----------------------------------------*/
+
+/*----------------------wyjatki----------------------------------------*/
+/* Large devices (laptops/desktops, 1300px and up) */
+@media only screen and (max-width: 1300px) { 
+    .Block{
+   flex-direction: column; }
+
+.logo {
+       margin-left: 3.1em;
+       display: flex;
+       flex-direction: center;
+       align-items: center;
+       width: 50%;
+}
+
+.logo > img {
+   width:34em;
+   height: 24em;
+}
+
+form {
+   flex-direction: column;
+   height: 40%;
+   width: 50%;
+}
+
+form > input {
+   line-height: 2em;
+   font-size: 1.5em;
+}
+
+.button {
+   line-height: 2em;
+   font-size: 1.5em;
+}
+.button2{
+    line-height: 2em;
+    font-size: 1.5em;
+ }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px) {
+.Block{
+    flex-direction: column; }
+
+.logo {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        width: 50%;
+}
+
+.logo > img {
+    width:25em;
+    height: 15em;
+}
+
+form {
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+}
+
+form > input {
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.button {
+    line-height: 2em;
+    font-size: 1.5em;
+}
+.button2{
+    line-height: 2em;
+    font-size: 1.5em;
+ }
+}
+
+@media only screen and (max-device-width:600px) {
+    .Block{
+        flex-direction: column; }
+    
+    .logo {
+            margin-left: 3.2em;
+            display: flex;
+            flex-direction: center;
+            align-items: center;
+            width: 50%;
+    }
+    
+    .logo > img {
+        width:55em;
+        height: 45em;
+    }
+    
+    form {
+        flex-direction: column;
+        height: 55%;
+        width: 80%;
+    }
+    
+    form > input {
+        line-height: 3.5em;
+        font-size: 3em;
+    }
+    
+    .button {
+        line-height: 3.5em;
+        font-size: 3em;
+    }
+    .button2{
+        line-height: 3.5em;
+        font-size: 3em;
+        color:rgb(4, 16, 58);
+    }
+}
+  
