@@ -1,0 +1,50 @@
+/*-----------------------------------rightPanel-------------------------------------*/
+.block2{
+    display: block;
+    position: relative;
+    left :24%;
+    width: 76%;
+    height: inherit;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
+}
+
+.rightleftinformator{
+    position: relative;
+    float: right;
+    width: 15%;
+    height: 5%;
+    background-color:rgba(6,6,54,0.36);
+
+}
+.logomainscr{
+    position: relative;
+    top: 25%; 
+    left: 25%; 
+}
+
+.logomainscr>img{
+    height: 40em;
+    width: 40em;
+    opacity: 50%;
+}
+/*-----------------------------------MenuPanel-------------------------------------*/
+.menupanel{
+    display: flex;   
+    width: 24%;
+    height: 100%;
+    background:transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    left:0px;
+}
+
+.menupanelbackground{
+    display: flex;   
+    width: 100%;
+    height: 100%;
+    background-color:rgba(6,6,54,0.36);
+}
+/*-----------------------------------MenuPanel-------------------------------------*/
+
