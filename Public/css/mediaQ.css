@@ -1,0 +1,155 @@
+/*----------------------wyjatki----------------------------------------*/
+/* Large devices (laptops/desktops, 1300px and up) */
+@media only screen and (max-width: 1300px) { 
+ /*-----------------------------index_start----------------------------*/
+    .Block{
+   flex-direction: column; }
+
+.logo {
+       margin-left: 3.1em;
+       display: flex;
+       flex-direction: center;
+       align-items: center;
+       width: 50%;
+}
+
+.logo > img {
+   width:34em;
+   height: 24em;
+}
+
+form {
+   flex-direction: column;
+   height: 40%;
+   width: 50%;
+}
+
+form > input {
+   line-height: 2em;
+   font-size: 1.5em;
+}
+
+.button {
+   line-height: 2em;
+   font-size: 1.5em;
+}
+.button2{
+    line-height: 2em;
+    font-size: 1.5em;
+ }
+ /*-----------------------------index_end----------------------------*/
+ /*-----------------------------mainPage_start----------------------------*/
+ 
+
+ .logomainscr {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.logomainscr>img {
+    height: 30em;
+    width: 30em;
+    opacity: 50%;
+}
+
+/*-----------------------------mainPage_end----------------------------*/
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px) {
+/*-----------------------------index_start----------------------------*/
+.Block{
+    flex-direction: column; }
+
+.logo {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        width: 50%;
+}
+
+.logo > img {
+    width:25em;
+    height: 15em;
+}
+
+form {
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+}
+
+form > input {
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.button {
+    line-height: 2em;
+    font-size: 1.5em;
+}
+.button2{
+    line-height: 2em;
+    font-size: 1.5em;
+ }
+/*-----------------------------index_end----------------------------*/
+/*-----------------------------mainPage_start----------------------------*/
+.logomainscr>img {
+    height: 20em;
+    width: 20em;
+    opacity: 50%;
+}
+
+.logomainscr {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+/*-----------------------------mainPage_end----------------------------*/
+}
+
+@media only screen and (max-device-width:600px) {
+ /*-----------------------------index_start----------------------------*/
+    .Block{
+        flex-direction: column; }
+    
+    .logo {
+            margin-left: 3.2em;
+            display: flex;
+            flex-direction: center;
+            align-items: center;
+            width: 50%;
+    }
+    
+    .logo > img {
+        width:55em;
+        height: 45em;
+    }
+    
+    form {
+        flex-direction: column;
+        height: 55%;
+        width: 80%;
+    }
+    
+    form > input {
+        line-height: 3.5em;
+        font-size: 3em;
+    }
+    
+    .button {
+        line-height: 3.5em;
+        font-size: 3em;
+    }
+    .button2{
+        line-height: 3.5em;
+        font-size: 3em;
+        color:rgb(4, 16, 58);
+    }
+/*-----------------------------index_end----------------------------*/
+/*-----------------------------mainPage_start----------------------------*/
+/*-----------------------------mainPage_end----------------------------*/
+}
+  
