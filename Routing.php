@@ -1,7 +1,8 @@
+
 <?php
 
-require_once 'controllers\MainPageController.php';
-
+require_once 'controllers\SecurityController.php';
+require_once 'controllers\mainPageController.php';
 class Routing{
     private $routes=[];
     
@@ -9,8 +10,13 @@ class Routing{
     {
         $this->routes = [
             'mainPage'=>[
-                'controller'=>'MainPageController',
-                'action'=>'simpleOperation'
+                'controller'=>'mainPageController',
+                'action'=>'mainPage'
+            ],
+
+            'index'=>[
+                'controller'=>'SecurityController',
+                'action'=>'login'
             ]
             ];
     }

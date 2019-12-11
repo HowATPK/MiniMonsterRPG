@@ -20,10 +20,21 @@ class AppController{
         return $this->request === 'POST'; #porównanie wartości i typu czyli czy nasz request jest postem
     }
 
-    protected function render()
+    protected function render($variables = array(), $filename=null)
     {
-        echo "yolo";
-        die('THX NEX TIME');
+        $templatePath = $filename ? dirname(__DIR__).'\\Views\\'.get_class($this).'\\'. $filename.'.php' : '';
+
+        $output = 'File not found';
+        
+        if(file_exists($templatePath)){
+            extract($variables);
+            
+            ob_start();
+            include $templatePath;
+            $output = ob_get_clean();
+        }
+        print $output;
+        
     }
 }
 

@@ -1,10 +1,10 @@
 <?php
 require_once('AppController.php');
 
-class MainPageController extends AppController {
+class mainPageController extends AppController {
 
-    public function simpleOperation()
+    public function mainPage()
     {
-        $this->render();
+        $this->render([],"mainPage");
     }
 }
