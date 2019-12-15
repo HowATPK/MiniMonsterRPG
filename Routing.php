@@ -3,6 +3,7 @@
 
 require_once 'controllers\SecurityController.php';
 require_once 'controllers\mainPageController.php';
+require_once 'controllers\registerController.php';
 class Routing{
     private $routes=[];
     
@@ -17,6 +18,11 @@ class Routing{
             'index'=>[
                 'controller'=>'SecurityController',
                 'action'=>'login'
+            ],
+
+            'register'=>[
+                'controller'=>'RegisterController',
+                'action'=>'register'
             ]
             ];
     }

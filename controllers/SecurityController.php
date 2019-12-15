@@ -7,4 +7,5 @@ class SecurityController extends AppController {
     {
         $this->render([],"login");
     }
+
 }
