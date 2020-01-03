@@ -1,0 +1,119 @@
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.RegisterBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+    background: transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    z-index: 2;
+    justify-content: center;
+}
+
+form > input {
+    padding-left: 0.5em;
+    margin: 0 1em 0 1em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.125em solid #0D2663;
+    border-radius: 2em;
+    
+
+    /* font */
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+   
+    
+}
+form>input::placeholder{
+    opacity: 0.44;
+}
+
+form>label{
+    color: #0D2663;
+    line-height: 2em;
+    font-size: 1em;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.button3{
+    padding-left: 0.5em;
+    margin: 3em 1em 1em 1em;
+    background: #477DB1 0% 0% no-repeat padding-box;
+    border-radius: 2em;
+    border: 0.125em solid #000000;
+
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.facePicture{
+    position:relative;
+    top:500px;
+    right:150px;
+    z-index: 1;
+    
+}
+
+
+.ExamplePhotos{
+    display: flex;
+    flex-direction: column;
+}
+.photo>img{
+    color-interpolation-filters: sRGB;
+    width: 25em;
+    height: 18.75em;
+    margin: 0.5em 0em 0em 0em;
+    border-radius: 2em;
+    border: 0.125em solid #000000;
+}
+
+.actionbar{
+    background: #477DB1 0% 0% no-repeat padding-box;
+    width: inherit;
+    height: 2.5em;
+    border-radius: 1em;
+    padding: 0 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #0D2663;
+    line-height: 2em;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    border: 0.125em solid #000000;
+}
+/*----FotoManipulation---------*/
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); }
+/*----FotoManipulation---------*/

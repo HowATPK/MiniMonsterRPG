@@ -18,13 +18,13 @@
    height: 24em;
 }
 
-form {
+.Block>form {
    flex-direction: column;
    height: 40%;
    width: 50%;
 }
 
-form > input {
+.Block>form > input {
    line-height: 2em;
    font-size: 1.5em;
 }
@@ -54,6 +54,64 @@ form > input {
 }
 
 /*-----------------------------mainPage_end----------------------------*/
+/*-----------------------------register_start----------------------------*/
+
+.RegisterBlock> form > input {
+    padding-left: 0.5em;
+    margin: 0 1em 0 1em;
+    /* font */
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+}
+
+.RegisterBlock>form>label{
+    line-height: 2em;
+    font-size: 0.75em;
+}
+
+
+.facePicture{
+    width: 25em;
+    height: 18em;
+    position:relative;
+    top:500px;
+    right:100px;
+    z-index: 1;
+    
+}
+
+
+.ExamplePhotos{
+    display: flex;
+    flex-direction: column;
+}
+.photo>img{
+    color-interpolation-filters: sRGB;
+    width: 25em;
+    height: 18.75em;
+    margin: 0.5em 0em 0em 0em;
+    border-radius: 2em;
+    border: 0.125em solid #000000;
+}
+
+.actionbar{
+    background: #477DB1 0% 0% no-repeat padding-box;
+    width: inherit;
+    height: 2.5em;
+    border-radius: 1em;
+    padding: 0 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #0D2663;
+    line-height: 2em;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    border: 0.125em solid #000000;
+}
+/*-----------------------------register_end----------------------------*/
+
 }
 
 
