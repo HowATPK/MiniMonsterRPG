@@ -1,4 +1,16 @@
+
+
 /*-----------------------------------rightPanel-------------------------------------*/
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .block2{
     display: block;
     position: relative;
@@ -32,7 +44,7 @@
 }
 /*-----------------------------------MenuPanel-------------------------------------*/
 .menupanel{
-    display: flex;   
+    display: flex;  
     width: 24%;
     height: 100%;
     background:transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
@@ -40,8 +52,11 @@
     left:0px;
 }
 
+
+
 .menupanelbackground{
-    display: flex;   
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color:rgba(6,6,54,0.36);
