@@ -18,7 +18,7 @@
    height: 24em;
 }
 
-.Block>form {
+.Block >form {
    flex-direction: column;
    height: 40%;
    width: 50%;
@@ -56,6 +56,12 @@
 /*-----------------------------mainPage_end----------------------------*/
 /*-----------------------------register_start----------------------------*/
 
+.RegisterBlock>form {
+    height: 100%;
+    width: 80%;
+    margin-left: 5em;
+    
+}
 .RegisterBlock> form > input {
     padding-left: 0.5em;
     margin: 0 1em 0 1em;
@@ -67,49 +73,29 @@
 
 .RegisterBlock>form>label{
     line-height: 2em;
-    font-size: 0.75em;
+    font-size: 1em;
 }
 
 
 .facePicture{
-    width: 25em;
-    height: 18em;
+    
     position:relative;
-    top:500px;
-    right:100px;
+    top:35em;
+    right:6em;
     z-index: 1;
     
+}
+.facePicture>img{
+    width: 17em;
+    height: 15em;
 }
 
 
 .ExamplePhotos{
-    display: flex;
+    display:none;
     flex-direction: column;
 }
-.photo>img{
-    color-interpolation-filters: sRGB;
-    width: 25em;
-    height: 18.75em;
-    margin: 0.5em 0em 0em 0em;
-    border-radius: 2em;
-    border: 0.125em solid #000000;
-}
 
-.actionbar{
-    background: #477DB1 0% 0% no-repeat padding-box;
-    width: inherit;
-    height: 2.5em;
-    border-radius: 1em;
-    padding: 0 1em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-    color: #0D2663;
-    line-height: 2em;
-    font-size: 1em;
-    text-align: center;
-    font-style: italic;
-    border: 0.125em solid #000000;
-}
 /*-----------------------------register_end----------------------------*/
 
 }
@@ -133,13 +119,13 @@
     height: 15em;
 }
 
-form {
+.Block >form {
     flex-direction: column;
     height: 40%;
     width: 80%;
 }
 
-form > input {
+.Block >form > input {
     line-height: 2em;
     font-size: 1.5em;
 }
@@ -166,6 +152,53 @@ form > input {
     left: 15%;
 }
 /*-----------------------------mainPage_end----------------------------*/
+/*-----------------------------register_start----------------------------*/
+.RegisterBlock{
+    flex-direction: column;
+}
+.RegisterBlock>form {
+    height: 100%;
+    width: 100%;
+    margin-top: 50em;
+    margin-left: 0em;
+}
+.RegisterBlock> form > input {
+    padding-left: 0.5em;
+    margin: 0 1em 0 1em;
+    /* font */
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+}
+
+.RegisterBlock>form>label{
+    line-height: 2em;
+    font-size: 1em;
+    color:#65DEDE;
+    text-align: center;
+}
+
+
+.facePicture{
+    position:relative;
+    top:-60em;
+    right:10em;
+    z-index: 1;
+    
+}
+.facePicture>img{
+    width: 60em;
+    height: 40em;
+}
+
+
+.ExamplePhotos{
+    display: none;
+    flex-direction: column;
+}
+
+/*-----------------------------register_end----------------------------*/
+
 }
 
 @media only screen and (max-device-width:600px) {
@@ -186,13 +219,13 @@ form > input {
         height: 45em;
     }
     
-    form {
+    .Block >form {
         flex-direction: column;
         height: 55%;
         width: 80%;
     }
     
-    form > input {
+    .Block >form > input {
         line-height: 3.5em;
         font-size: 3em;
     }
@@ -209,5 +242,65 @@ form > input {
 /*-----------------------------index_end----------------------------*/
 /*-----------------------------mainPage_start----------------------------*/
 /*-----------------------------mainPage_end----------------------------*/
+/*-----------------------------register_start----------------------------*/
+
+.RegisterBlock{
+    flex-direction: column;
+}
+.RegisterBlock>form {
+    height: 100%;
+    width: 100%;
+    margin-top: 100em;
+    margin-left: 0em;
+}
+.RegisterBlock> form > input {
+    padding-left: 0.5em;
+    margin: 0 1em 0 1em;
+    /* font */
+    color: #0D2663;
+    line-height: 3em;
+    font-size: 2em;
+}
+
+.RegisterBlock>form>label{
+    line-height: 3em;
+    font-size: 2em;
+    color:#65DEDE;
+    text-align: center;
+}
+
+
+.facePicture{
+    position:relative;
+    top:-120em;
+    right:17em;
+    z-index: 1;
+    
+}
+.facePicture>img{
+    width: 100em;
+    height: 70em;
+}
+
+
+.ExamplePhotos{
+    display: none;
+    flex-direction: column;
+}
+
+.button3{
+    padding-left: 0.5em;
+    margin: 3em 1em 1em 1em;
+    background: #477DB1 0% 0% no-repeat padding-box;
+    border-radius: 2em;
+    border: 0.125em solid #000000;
+
+    color: #0D2663;
+    line-height: 3em;
+    font-size:2em;
+    font-weight: bold;
+
+}
+/*-----------------------------register_end----------------------------*/
 }
   

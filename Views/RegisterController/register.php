@@ -2,9 +2,9 @@
 <head>
 <head>
     <meta charset="UTF-8">
-    <link rel="Stylesheet" type="text/css" href="Public/css/register.css" />
-    <link rel="Stylesheet" type="text/css" href="Public/css/mediaQ.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="Stylesheet" type="text/css" href="Public/css/register.css" />
+    <link rel="Stylesheet" type="text/css" href="Public/css/MediaQu.css" />
     <title>MicroMonsterRPG</title>
 </head>
 </head>
@@ -27,19 +27,16 @@
     </div>
     <div class="ExamplePhotos">
             <div class="photo">
-                <img src="Public/img/rayHowAT.png" alt="ingame foto" class="huerotate">
-                <div class="actionbar">Rayquaza lv45</div>
-            </div>
-
-            <div class="photo">
                 <img src="Public/img/rayHowAT.png" alt="ingame foto" class="grayscale">
                 <div class="actionbar">Rayquaza lv10</div>
             </div>
-            
+
             <div class="photo">
                 <img src="Public/img/rayHowAT.png" alt="ingame foto" class="huerotate">
-                <div class="actionbar">Rayquaza lv45</div>
+                <div class="actionbar">Rayquaza lv25</div>
             </div>
+            
+            
 </div>
 </div>
 

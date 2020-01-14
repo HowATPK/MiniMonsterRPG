@@ -71,7 +71,7 @@ form>label{
 
 .facePicture{
     position:relative;
-    top:500px;
+    top:300px;
     right:150px;
     z-index: 1;
     
@@ -86,25 +86,25 @@ form>label{
     color-interpolation-filters: sRGB;
     width: 25em;
     height: 18.75em;
-    margin: 0.5em 0em 0em 0em;
+    margin: 5em 0em 0em 0em;
     border-radius: 2em;
-    border: 0.125em solid #000000;
+    border: 0.125em solid #ffffff;
 }
 
 .actionbar{
-    background: #477DB1 0% 0% no-repeat padding-box;
+    background: #BCE0FD 0% 0% no-repeat padding-box;
     width: inherit;
     height: 2.5em;
     border-radius: 1em;
     padding: 0 1em;
     margin-bottom: 0.5em;
     font-weight: bold;
-    color: #0D2663;
+    color: rgb(0, 0, 0);
     line-height: 2em;
     font-size: 1em;
     text-align: center;
     font-style: italic;
-    border: 0.125em solid #000000;
+    border: 0.125em solid #0c002e62;
 }
 /*----FotoManipulation---------*/
 .saturate { filter: saturate(3); }
