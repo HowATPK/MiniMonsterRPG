@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="Stylesheet" type="text/css" href="Public/css/style.css" />
-    <link rel="Stylesheet" type="text/css" href="Public/css/MediaQu.css" />
+    <link rel="Stylesheet" type="text/css" href="Public/css/MediaQue.css" />
     <title>MicroMonsterRPG</title>
     
 </head>

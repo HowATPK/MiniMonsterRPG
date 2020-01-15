@@ -4,6 +4,8 @@
 require_once 'controllers\SecurityController.php';
 require_once 'controllers\mainPageController.php';
 require_once 'controllers\registerController.php';
+require_once 'controllers\ShopController.php';
+require_once 'controllers\BackpackController.php';
 class Routing{
     private $routes=[];
     
@@ -20,10 +22,22 @@ class Routing{
                 'action'=>'login'
             ],
 
+            'Shop'=>[
+                'controller'=>'ShopController',
+                'action'=>'shop'
+            ],
+
+            'Backpack'=>[
+                'controller'=>'BackpackController',
+                'action'=>'backpack'
+            ],
+
             'register'=>[
                 'controller'=>'RegisterController',
                 'action'=>'register'
-            ]
+            ],
+
+            
             ];
     }
 

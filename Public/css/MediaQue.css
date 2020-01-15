@@ -53,6 +53,35 @@
     opacity: 50%;
 }
 
+.monay{
+    color:gold;
+    font-size: 1em; 
+    float: right;
+}
+
+.monay>img{
+    height: 2em;
+    width: 2em;
+}
+
+.leftBarForm>button{
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.leftBarForm>.buttonRightPanelLogout{
+    color: lavender;
+    margin: 0em 0em 0em 0em;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.leftBarForm>.buttonRightPanelGoBack{
+    color: lavender;
+    margin: 0em 0em 0em 0em;
+    line-height:2em;
+    font-size: 1.5em;
+}
 /*-----------------------------mainPage_end----------------------------*/
 /*-----------------------------register_start----------------------------*/
 
@@ -241,6 +270,54 @@
     }
 /*-----------------------------index_end----------------------------*/
 /*-----------------------------mainPage_start----------------------------*/
+                                                            .rightleftinformator{
+                                                                width: 30%;
+                                                                height: 8%;
+                                                            }
+                                                            .monay{
+                                                                font-size: 3em; 
+                                                            }
+
+                                                            .monay>img{
+                                                                height: 2em;
+                                                                width: 2em;
+                                                            }
+
+
+                                                            .logomainscr{
+                                                                top: 30%; 
+                                                                left: 10%; 
+                                                            }
+
+                                                            .logomainscr>img{
+                                                                height: 40em;
+                                                                width: 40em;
+                                                                opacity: 50%;
+                                                            }
+                                                            /*-----------------------------------MenuPanel-------------------------------------*/
+                                                            .leftBarForm>button{
+                                                                margin: 2em 0em 0em 0em;
+                                                                line-height: 3em;
+                                                                font-size: 2.5em;
+                                                            }
+                                                            .leftBarForm>.buttonRightPanelJoin{
+                                                                line-height: 3em;
+                                                                font-size: 2.5em;
+                                                            }
+                                                            .leftBarForm>.buttonRightPanelLogout{
+                                                                margin: 2em 0em 0em 0em;
+                                                                line-height: 3em;
+                                                                font-size: 2.5em;
+                                                            }
+
+                                                            .leftBarForm>.buttonRightPanelGoBack{
+                                                                margin: 2em 0em 0em 0em;
+                                                                line-height: 3em;
+                                                                font-size: 2.5em;
+                                                            }
+
+
+
 /*-----------------------------mainPage_end----------------------------*/
 /*-----------------------------register_start----------------------------*/
 

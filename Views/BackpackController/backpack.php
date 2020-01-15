@@ -13,13 +13,11 @@
     <div class = "menupanel">
             <div class = "menupanelbackground" >
                 <form class="leftBarForm" method="POST">
-                    <button  type="submit" formaction="?page=Backpack" >Backpack</button>
-                    <button  type="submit" >Monsters</button>
-                    <button  type="submit" >Battle</button>
-                    <button  type="submit" formaction="?page=Shop">Item Shop</button>
-                    <button  type="submit" >Friendlist</button>
-                    <button  class="buttonRightPanelJoin" type="submit" >JOIN</button>
-                    <button  class="buttonRightPanelLogout" type="submit" formaction="?page=index">Logout</button>
+                    <button  type="submit" >HealPots</button>
+                    <button  type="submit" >Monster Balls</button>
+                    <button  type="submit" >Special Items</button>
+                    <button  type="submit" >Attack changers</button>
+                    <button  class="buttonRightPanelGoBack" type="submit" formaction="?page=mainPage">Go Back</button>
                 </form>
             </div>
     </div>
@@ -28,7 +26,7 @@
     <div class="block2">
             <div class="rightleftinformator">
                 <div class="monay">
-                    <img src="Public/img/coin.svg">1111
+                    <img src="Public/img/coin.svg">12355
                 </div>
             </div>
             <div class="logomainscr">
