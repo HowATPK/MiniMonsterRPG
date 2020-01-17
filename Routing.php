@@ -22,6 +22,16 @@ class Routing{
                 'action'=>'login'
             ],
 
+            'login'=>[
+                'controller'=>'SecurityController',
+                'action'=>'login'
+            ],
+
+            'logout'=>[
+                'controller'=>'SecurityController',
+                'action'=>'logout'
+            ],
+
             'Shop'=>[
                 'controller'=>'ShopController',
                 'action'=>'shop'

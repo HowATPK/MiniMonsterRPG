@@ -7,7 +7,8 @@ class AppController{
 
     public function __construct()
     {
-        $this->request = $_SERVER['REQUEST_METHOD'];#zwraca nazw metody http użytej w otwartej stronie
+        $this->request = strtolower($_SERVER['REQUEST_METHOD']);#zwraca nazw metody http użytej w otwartej stronie
+        session_start();
     }
 
     protected function isGet(): bool

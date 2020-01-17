@@ -12,14 +12,14 @@
 
     <div class = "menupanel">
             <div class = "menupanelbackground" >
-                <form class="leftBarForm" method="POST">
+                <form class="leftBarForm" action="?page=mainPage" method="POST">
                     <button  type="submit" formaction="?page=Backpack" >Backpack</button>
                     <button  type="submit" >Monsters</button>
                     <button  type="submit" >Battle</button>
                     <button  type="submit" formaction="?page=Shop">Item Shop</button>
                     <button  type="submit" >Friendlist</button>
                     <button  class="buttonRightPanelJoin" type="submit" >JOIN</button>
-                    <button  class="buttonRightPanelLogout" type="submit" formaction="?page=index">Logout</button>
+                    <button  class="buttonRightPanelLogout" type="submit" formaction="?page=logout">Logout</button>
                 </form>
             </div>
     </div>
@@ -34,6 +34,7 @@
             <div class="logomainscr">
                     <img src="Public/img/MiniMonsterLogo.svg">
             </div>
+            
             
         
 

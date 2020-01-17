@@ -12,7 +12,7 @@
 
     <div class = "menupanel">
             <div class = "menupanelbackground" >
-                <form class="leftBarForm" method="POST">
+                <form class="leftBarForm" action="?page=mainPage" method="POST">
                     <button  type="submit" >HealPots</button>
                     <button  type="submit" >Monster Balls</button>
                     <button  type="submit" >Special Items</button>

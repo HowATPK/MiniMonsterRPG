@@ -12,14 +12,18 @@
     <div class="logo">
         <img src="Public/img/MiniMonsterLogo.svg">
     </div>
-    <form action="?page=mainPage" method="POST" >
+    <form action="?page=login" method="POST" >
             <input name="email" type="text" placeholder="youremail@email.com">
             <input name="password" type="password" placeholder="password">
             <button class="button" type="submit" >PLAY!</button>
             <button class="button2" type="submit" formaction="?page=register">Register Now!</button>
+            <?php if(isset($message)): ?>
+        <?php foreach($message as $item): ?>
+            <div><?= $item ?></div>
+        <?php endforeach; ?>
+        <?php endif; ?>  
     </form>
-            
-
+        
 </div>
 
 
