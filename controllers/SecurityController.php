@@ -1,42 +1,35 @@
 <?php
 require_once('AppController.php');
 require_once __DIR__.'//..//models//User.php';
+require_once __DIR__.'//..//repository//repo.php';
+require_once __DIR__.'//..//repository//UserRepo.php';
 class SecurityController extends AppController {
 
     public function login()
     {
-
-        //sample users list until we connect to a database
-    $users = 
-    [
-        new User('adrian.widlak@pk.edu.pl','Adrian',1000),
-        new User('krzysztof.krawczyk@pk.edu.pl','parostatek',1000),
-    ];
-
+        $userRepository = new UserRepository();
     
     if (!empty($_POST['email'])) {
-        
-        //we'll replace this with a query to the database
-        $user=null;
-        foreach ($users as $u) {
-        if ($u->getEmail() === $_POST['email']) {
-        $user = $u;
-        break;
-        }
-        }
-        if($user==null) {
-        return $this->render(['message' => ['Email not recognized']],'login');
-        }
-        if ($user->getPassword() !== ($_POST['password'])) {
-        return $this->render(['message' => ['Wrongpassword']],'login');
-        } else {
-        $_SESSION["id"] = $user->getEmail();
-        $_SESSION["role"] = $user->getRole();
+        $user=$userRepository->getUser($_POST['email']);
+        if($user==null) 
+            {
+            return $this->render(['message' => ['Email not recognized']],'login');
+            }
+        if ($user->getPassword() !== ($_POST['password'])) 
+            {
+            return $this->render(['message' => ['Wrongpassword']],'login');
+            } 
+        else 
+            {
+            $_SESSION["email"] = $user->getEmail();
+            $_SESSION["id"] = $user-> getId();
+            $_SESSION["role"] = $user->getRole();
+            $_SESSION["monay"] = $user->getMoney();
 
-        $url = "http://$_SERVER[HTTP_HOST]/minimonsterrpg/";
-        header("Location: {$url}?page=mainPage");
-        exit();
-        }
+            $url = "http://$_SERVER[HTTP_HOST]/minimonsterrpg/";
+            header("Location: {$url}?page=mainPage");
+            exit();
+            }
         }
        
         $this->render([],"login");

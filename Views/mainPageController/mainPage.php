@@ -28,12 +28,19 @@
     <div class="block2">
             <div class="rightleftinformator">
                 <div class="monay">
-                    <img src="Public/img/coin.svg">1111
+                    <img src="Public/img/coin.svg">
+                    <?php
+                    print_r($_SESSION['monay']);
+                    ?>
                 </div>
             </div>
             <div class="logomainscr">
                     <img src="Public/img/MiniMonsterLogo.svg">
             </div>
+            <?php
+                if(isset($_SESSION))
+                print_r($_SESSION);
+            ?>
             
             
         

@@ -26,7 +26,10 @@
     <div class="block2">
             <div class="rightleftinformator">
                 <div class="monay">
-                    <img src="Public/img/coin.svg">12355
+                    <img src="Public/img/coin.svg">
+                    <?php
+                    print_r($_SESSION['monay']);
+                    ?>
                 </div>
             </div>
             <div class="logomainscr">

@@ -11,7 +11,7 @@
 
 <body>
 <div class="RegisterBlock">
-    <form action="?page=index" method="POST" >
+    <form action="?page=register" method="POST" >
             <label for="email">Email address</label>
             <input name="email" type="text" placeholder="youremail@email.com">
             <label for="repeatemail">Repeat Email address</label>
@@ -30,7 +30,11 @@
                 <img src="Public/img/rayHowAT.png" alt="ingame foto" class="grayscale">
                 <div class="actionbar">Rayquaza lv10</div>
             </div>
-
+            <?php if(isset($message)): ?>
+        <?php foreach($message as $item): ?>
+            <div><?= $item ?></div>
+        <?php endforeach; ?>
+        <?php endif; ?>  
             <div class="photo">
                 <img src="Public/img/rayHowAT.png" alt="ingame foto" class="huerotate">
                 <div class="actionbar">Rayquaza lv25</div>

@@ -5,14 +5,15 @@ class User {
     private $email;
     private $password;
     private $money;
-    private $role = ['ROLE_USER'];
+    private $role ;
 
-    public function __construct(string $email,string $password,int $money,int $id = null)
+    public function __construct(string $email,string $password,int $money,int $id = null,int $role)
     {
         $this->email = $email;
         $this->password = $password;
         $this->money = $money;
         $this->id = $id;
+        $this->role=$role;
     }
 
     public function getId(): int
@@ -31,7 +32,7 @@ class User {
     }
 
 
-    public function getRole(): array
+    public function getRole(): int
     {
         return $this->role;
     }
