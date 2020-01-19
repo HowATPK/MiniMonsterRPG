@@ -15,11 +15,8 @@ class SecurityController extends AppController {
             {
             return $this->render(['message' => ['Email not recognized']],'login');
             }
-        if ($user->getPassword() !== ($_POST['password'])) 
-            {
-            return $this->render(['message' => ['Wrongpassword']],'login');
-            } 
-        else 
+            
+        if (password_verify(($_POST['password']),$user->getPassword()))
             {
             $_SESSION["email"] = $user->getEmail();
             $_SESSION["id"] = $user-> getId();
@@ -29,6 +26,10 @@ class SecurityController extends AppController {
             $url = "http://$_SERVER[HTTP_HOST]/minimonsterrpg/";
             header("Location: {$url}?page=mainPage");
             exit();
+            } 
+        else 
+            {
+                return $this->render(['message' => ['Wrongpassword']],'login');
             }
         }
        

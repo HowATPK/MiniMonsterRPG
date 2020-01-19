@@ -19,11 +19,11 @@ class UserRepository extends Repository {
         return new User($user['email'],$user['password'],$user['money'],$user['ID_user'],$user['id_rola']);
     }
 
-    public function NewUser(string $email,string $login,string $password,string $salt,date $date)
+    public function NewUser(string $email,string $login,string $password,string $salt,string $date)
     {
         $stmt = $this->database->connect()->prepare('
         INSERT INTO `user` (`ID_user`, `id_rola`,`email`, `login`, `password`, `salt`, `created_at`,`money`) 
-        VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)');
+        VALUES (NULL, ?, ?, ?, ?, ?, ?, ?)');
         $stmt->execute([1,$email,$login,$password,$salt,$date,200]);
     }
 
@@ -31,6 +31,14 @@ class UserRepository extends Repository {
 
         $stmt = $this->database->connect()->prepare('SELECT * FROM user where email != :email;');
         $stmt->bindParam(':email', $_SESSION['email'], PDO::PARAM_STR);
+        $stmt->execute();
+        $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $users;
+    }
+
+    public function getUsersVeryfication(): array {
+
+        $stmt = $this->database->connect()->prepare('SELECT * FROM user');
         $stmt->execute();
         $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $users;

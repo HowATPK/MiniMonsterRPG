@@ -20,7 +20,7 @@
             <input name="password" type="password" placeholder="password">
             <label for="repeatpassword">Repeat Password</label>
             <input name="repeatpassword" type="password" placeholder="password">
-            <button  class="button3" type="submit" >Register Now!</button>
+            <button  class="button3" name="buttonregister" type="submit" >Register Now!</button>
     </form>
     <div class="facePicture">
         <img src="Public/img/facePicture.svg">
