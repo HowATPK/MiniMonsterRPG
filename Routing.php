@@ -37,6 +37,26 @@ class Routing{
                 'action'=>'shop'
             ],
 
+            'MediumMedicine'=>[
+                'controller'=>'ShopController',
+                'action'=>'MediumMedicine'
+            ],
+
+            'BigMedicine'=>[
+                'controller'=>'ShopController',
+                'action'=>'BigMedicine'
+            ],
+
+            'SmallMedicine'=>[
+                'controller'=>'ShopController',
+                'action'=>'SmallMedicine'
+            ],
+
+            'RedBall'=>[
+                'controller'=>'ShopController',
+                'action'=>'RedBall'
+            ],
+
             'Backpack'=>[
                 'controller'=>'BackpackController',
                 'action'=>'backpack'

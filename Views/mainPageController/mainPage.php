@@ -38,8 +38,8 @@
                     <img src="Public/img/MiniMonsterLogo.svg">
             </div>
             <?php
-                if(isset($_SESSION))
-                print_r($_SESSION);
+               // if(isset($_SESSION))
+                //print_r($_SESSION);
             ?>
             
             

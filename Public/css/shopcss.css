@@ -1,0 +1,140 @@
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------------------rightPanel-------------------------------------*/
+.block2{
+    display: block;
+    position: relative;
+    left :24%;
+    width: 76%;
+    height: inherit;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
+}
+
+.ItemList{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightleftinformator{
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 5%;
+    background-color:rgba(6,6,54,0.36);
+}
+.monay{
+    color:gold;
+    font-size: 1.5em; 
+    float: right;
+}
+
+.monay>img{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.itemLabel{
+    color:rgb(221, 199, 0);
+    font-size: 1.5em; 
+    margin: 0em 0em 3em 1em;
+    font-weight: bold;
+    font-family: "Papyrus"
+}
+
+.buyButton{
+    margin: 0em 1em 0em 0em;
+    background: #477DB1 0% 0% no-repeat padding-box;
+    border: 0.125em solid #000000;
+
+    color: #0D2663;
+    border-radius: 0.05em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+/*-----------------------------------MenuPanel-------------------------------------*/
+.menupanel{
+    display: flex;  
+    width: 24%;
+    height: 100%;
+    background:transparent linear-gradient(180deg, #26B7EE 0%, #111D48 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    left:0px;
+}
+
+.menupanelbackground{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(6,6,54,0.36);
+}
+
+.leftBarForm{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.leftBarForm>button{
+    padding-left: 0.5em;
+    margin: 0em 0em 0em 0em;
+    background:none;
+    border: none;
+
+    color: #06163D;
+    line-height: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Papyrus";
+}
+.leftBarForm>button:hover{
+    background-color:#060636 ;
+    color: #00F2F2;
+}
+.leftBarForm>.buttonRightPanelJoin:hover{
+    background-color:#060636 ;
+    color: lavender;
+  
+}
+.leftBarForm>.buttonRightPanelLogout:hover{
+    background-color:#060636 ;
+    color: lavender;
+}
+
+.leftBarForm>..buttonRightPanelGoBack:hover{
+    background-color:#060636 ;
+    color: lavender;
+}
+.leftBarForm>.buttonRightPanelJoin{
+    color: lavender;
+}
+
+.leftBarForm>.buttonRightPanelLogout{
+    color: lavender;
+    margin: 9em 0em 0em 0em;
+}
+
+.leftBarForm>.buttonRightPanelGoBack{
+    color: lavender;
+    margin: 15em 0em 0em 0em;
+}
+
+
+
+/*-----------------------------------MenuPanel-------------------------------------*/
