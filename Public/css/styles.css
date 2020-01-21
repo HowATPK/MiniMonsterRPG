@@ -86,5 +86,18 @@ form>input::placeholder{
     font-weight: bold;
 }
 
+.message{
+    padding-left: 0.5em;
+    margin: -1em 1em 1em 1em;
+    background:none;
+    border-radius: none;
+    border: none;
+
+    color: #0D2663;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
 /*----------------------BLOCK----------------------------------------*/
 

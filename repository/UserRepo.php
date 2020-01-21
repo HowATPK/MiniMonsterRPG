@@ -56,4 +56,13 @@ class UserRepository extends Repository {
         $stmt=$this->database>conntect()->prepare('UPDATE user t SET t.monay = ? WHERE email = ?;');
         $stmt->execute([$newMonayWalue,$email]);
     }
+
+    public function getItems():array{
+        $stmt = $this->database->connect()->prepare('SELECT * FROM useritemslist where ID_user = :id;');
+        $stmt->bindParam(':id', $_SESSION['id'], PDO::PARAM_STR);
+        $stmt->execute();
+        $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $items;
+    }
+
 }

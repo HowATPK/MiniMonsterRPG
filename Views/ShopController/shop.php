@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
+        die('You are not logged in!');
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,6 +11,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="Stylesheet" type="text/css" href="Public/css/shopcss.css"/>
         <link rel="Stylesheet" type="text/css" href="Public/css/MediaQue.css" />
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery3.3.1.min.js"></script>
         <title>MicroMonsterRPG</title>
     </head>
 
@@ -51,5 +58,11 @@
                 </div>
             </form>
     </div>
+
+        $(document).ready(function(){
+        $("p").click(function(){
+        $(this).hide();
+        });
+        });
 </body>
 </html>

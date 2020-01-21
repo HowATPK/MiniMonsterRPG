@@ -22,17 +22,22 @@ class SecurityController extends AppController {
             $_SESSION["id"] = $user-> getId();
             $_SESSION["role"] = $user->getRole();
             $_SESSION["monay"] = $user->getMoney();
-
+            
             $url = "http://$_SERVER[HTTP_HOST]/minimonsterrpg/";
             header("Location: {$url}?page=mainPage");
             exit();
             } 
         else 
             {
-                return $this->render(['message' => ['Wrongpassword']],'login');
+                return $this->render(['message' => ['Wrong password']],'login');
             }
         }
        
+        $this->render([],"login");
+    }
+
+    public function backToLogin()
+    {
         $this->render([],"login");
     }
 

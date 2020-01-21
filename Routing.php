@@ -6,6 +6,8 @@ require_once 'controllers\mainPageController.php';
 require_once 'controllers\registerController.php';
 require_once 'controllers\ShopController.php';
 require_once 'controllers\BackpackController.php';
+require_once 'controllers\adminController.php';
+
 class Routing{
     private $routes=[];
     
@@ -19,7 +21,7 @@ class Routing{
 
             'index'=>[
                 'controller'=>'SecurityController',
-                'action'=>'login'
+                'action'=>'backToLogin'
             ],
 
             'login'=>[
@@ -66,6 +68,24 @@ class Routing{
                 'controller'=>'RegisterController',
                 'action'=>'register'
             ],
+
+            'Admin' => [
+                'controller' => 'AdminController',
+                'action' => 'Admin'
+            ],
+         
+            
+            'admin_users' => [
+            'controller' => 'adminController',
+            'action' => 'users'
+            ],
+
+            'user_items' => [
+                'controller' => 'BackpackController',
+                'action' => 'items'
+            ],
+               
+               
 
             
             ];
